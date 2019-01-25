@@ -83,6 +83,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias gedit='/mnt/c/Program\ Files/gedit/bin/gedit.exe'
     alias winify=pd
     alias linify=pld
+    alias getip="/sbin/ifconfig eth0 | grep 'inet addr' | cut -d: -f2"
     function printalphabet(){
         for i in {a..z};do
             echo $i
